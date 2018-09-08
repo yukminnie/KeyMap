@@ -3,10 +3,12 @@
     <head>
         <meta charset="utf-8">
         <title>keymap</title>
+        <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
         <header></header>
-        <main id="zhangsan">
+        <main>
+            <div class="wrapper" id="mi_div"></div>
 
         </main>
         <footer></footer>
@@ -45,8 +47,20 @@
                 'n': 'music.163.com',
                 'm': 'xiaomi.com'
             }
-            div1 = document.createElement('div')
-            zhangsan.appendChild(div1)
+            index = 0
+            while (index < keys['length']){
+                y_div = document.createElement('div')
+                mi_div.appendChild(y_div)
+                row = keys[index]
+                index_two = 0
+                while (index_two < row['length']){
+                    x_kbd = document.createElement('kbd')
+                    x_kbd.textContent = row[index_two]
+                    y_div.appendChild(x_kbd)
+                    index_two = index_two + 1
+                }
+                index = index + 1
+            }
         </script>
     </body>
 </html>
