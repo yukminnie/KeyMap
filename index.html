@@ -47,6 +47,12 @@
                 'n': 'music.163.com',
                 'm': 'xiaomi.com'
             }
+            // var hashInLocalStorage = JSON.parse(localStorage.getItem('keymap') || '')
+            var hashInLocalStorage = JSON.parse(localStorage.getItem('keymap') || 'null')
+            if (hashInLocalStorage){
+                hash = hashInLocalStorage
+            }
+
             index = 0
             while (index < keys['length']){
                 y_div = document.createElement('div')
@@ -63,7 +69,9 @@
                         keygen = orign.target.id
                         url = prompt('给我一个网址')
                         hash[keygen] = url
+                        localStorage.setItem('keymap', JSON.stringify(hash))
                     }
+                    // localStorage.setItem('keymap', JSON.stringify(hash))
                     x_kbd.appendChild(x_btn)
                     y_div.appendChild(x_kbd)
                     index_two = index_two + 1
