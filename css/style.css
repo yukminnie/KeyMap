@@ -10,6 +10,16 @@ kbd {
   text-transform: uppercase;
 }
 
+kbd {
+    position: relative;
+}
+
+kbd > button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 main > div > div:nth-child(2){
   margin-left: 2em;
 }
