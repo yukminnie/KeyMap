@@ -5,20 +5,20 @@ a {
 kbd {
   border: 1px solid red;
   display: inline-block;
-  width: 2em;
-  height: 2em;
+  width: 4em;
+  height: 4em;
   text-transform: uppercase;
 }
 
 main > div > div:nth-child(2){
-  margin-left: 1em;
-}
-
-main > div >div:nth-child(3){
   margin-left: 2em;
 }
 
+main > div >div:nth-child(3){
+  margin-left: 4em;
+}
+
 #mi_div {
-  width: 300px;
+  width: 600px;
   margin: 0px auto;
 }
