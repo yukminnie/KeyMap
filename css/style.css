@@ -18,6 +18,11 @@ kbd > button {
     position: absolute;
     bottom: 0;
     right: 0;
+    display: none;
+}
+
+kbd:hover > button {
+    display: inline-block;
 }
 
 main > div > div:nth-child(2){
