@@ -37,7 +37,7 @@ main > div >div:nth-child(3){
 }
 
 #mi_div {
-  width: 600px;
+  width: 800px;
   margin: 0px auto;
 }
 
@@ -58,8 +58,17 @@ main > div >div:nth-child(3){
   border-radius: 6px;
   font-size: 16px;
   font-family: Helvetica;
+  color: #c5c5c5;
   box-shadow: 0 0 0 1px #1a1b1c, 0 0 0 2px #1f2020, 0 3px 0 2px #080808;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+
+.row {
+  margin: 20px;
+}
+
+.row .key {
+  margin: 0 10px;
 }
