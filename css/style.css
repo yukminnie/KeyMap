@@ -36,10 +36,20 @@ main > div >div:nth-child(3){
   margin-left: 4em;
 }
 
-#mi_div {
+/* #mi_div {
   width: 800px;
   margin: 0px auto;
+} */
+
+main {
+  text-align: center;
 }
+
+#mi_div {
+  display: inline-block;
+}
+
+
 
 /*
 1, div 是不包括它外部的阴影的
