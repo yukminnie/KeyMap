@@ -109,3 +109,11 @@ body {
   top: 2px;
   left: 4px;
 }
+
+.img {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 4px;
+  bottom: 2px;
+}
