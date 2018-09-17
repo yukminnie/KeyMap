@@ -40,3 +40,26 @@ main > div >div:nth-child(3){
   width: 600px;
   margin: 0px auto;
 }
+
+/*
+1, div 是不包括它外部的阴影的
+2, 通过js生成的inline没有回车，所以默认没有间隙  
+3, css gradient generator 渐变生成方式
+4, border-radius 是使用数格子的方法计算出来的
+5, box-shadow 实现的边框外包着边框的效果
+6, inline元素内部的居中实现方法 flex
+
+*/
+.key {
+  width: 50px;
+  height: 40px;
+  background: linear-gradient(to bottom, #292929 0%, #111111 100%);
+  border: 1px solid #373737;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: Helvetica;
+  box-shadow: 0 0 0 1px #1a1b1c, 0 0 0 2px #1f2020, 0 3px 0 2px #080808;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
