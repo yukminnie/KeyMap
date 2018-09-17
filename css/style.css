@@ -40,9 +40,16 @@ main > div >div:nth-child(3){
   width: 800px;
   margin: 0px auto;
 } */
+/* 
+又学习到了flex第三种的居中方式
+*/
 
 main {
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 #mi_div {
