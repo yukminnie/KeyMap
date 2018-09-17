@@ -29,11 +29,11 @@ kbd:hover > button {
 }
 
 main > div > div:nth-child(2){
-  margin-left: 2em;
+  margin-left: -20px;
 }
 
 main > div >div:nth-child(3){
-  margin-left: 4em;
+  margin-left: -80px;
 }
 
 /* #mi_div {
