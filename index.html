@@ -66,6 +66,8 @@
                     x_kbd.className = 'key'
                     x_btn = document.createElement('button')
                     x_btn.textContent = 'E'
+                    x_img = document.createElement('img')
+                    x_img.src = 'http://' + hash[row[index_two]] + '/favicon.ico'
                     x_btn.id = row[index_two]
                     x_btn.onclick = function(orign){
                         keygen = orign.target.id
@@ -74,6 +76,7 @@
                         localStorage.setItem('keymap', JSON.stringify(hash))
                     }
                     // localStorage.setItem('keymap', JSON.stringify(hash))
+                    x_kbd.appendChild(x_img)
                     x_kbd.appendChild(x_btn)
                     y_div.appendChild(x_kbd)
                     index_two = index_two + 1
