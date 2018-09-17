@@ -80,9 +80,10 @@ main {
   font-family: Helvetica;
   color: #c5c5c5;
   box-shadow: 0 0 0 1px #1a1b1c, 0 0 0 2px #1f2020, 0 3px 0 2px #080808;
-  display: inline-flex;
+  /* display: inline-flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
+  position: relative;
 }
 
 .row {
@@ -101,4 +102,10 @@ body {
 .wrapper {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
+}
+
+.text {
+  position: absolute;
+  top: 2px;
+  left: 4px;
 }
