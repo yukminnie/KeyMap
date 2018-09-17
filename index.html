@@ -81,9 +81,17 @@
                     }
                     x_btn.id = row[index_two]
                     x_btn.onclick = function(orign){
+                        btn_fix = orign['target']
+                        img_fix = btn_fix.previousSibling
+
                         keygen = orign.target.id
                         url = prompt('给我一个网址')
                         hash[keygen] = url
+
+                        img_fix.src = 'http://' + url + '/favicon.ico'
+                        img_fix.onerror = function(fix) {
+                            fix.target.src = '//mweb-1253466367.cos.ap-shanghai.myqcloud.com/5a05afbc5e183.png'
+                        }
                         localStorage.setItem('keymap', JSON.stringify(hash))
                     }
                     // localStorage.setItem('keymap', JSON.stringify(hash))
