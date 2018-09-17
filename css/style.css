@@ -42,6 +42,9 @@ main > div >div:nth-child(3){
 } */
 /* 
 又学习到了flex第三种的居中方式
+
+1, 不仅会影响垂直居中
+2, 还会影响背景图的平铺
 */
 
 main {
@@ -88,4 +91,14 @@ main {
 
 .row .key {
   margin: 0 10px;
+}
+
+body {
+  background: grey url(../wallhaven.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.wrapper {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
 }
