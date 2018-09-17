@@ -71,7 +71,14 @@
                     x_btn.textContent = 'E'
                     x_img = document.createElement('img')
                     x_img.className = 'img'
-                    x_img.src = 'http://' + hash[row[index_two]] + '/favicon.ico'
+                    if(hash[row[index_two]]){
+                        x_img.src = 'http://' + hash[row[index_two]] + '/favicon.ico'
+                    }else{
+                        x_img.src = '//mweb-1253466367.cos.ap-shanghai.myqcloud.com/5a05afbc5e183.png'
+                    }
+                    x_img.onerror = function(error){
+                        error.target.src = '//mweb-1253466367.cos.ap-shanghai.myqcloud.com/5a05afbc5e183.png'
+                    }
                     x_btn.id = row[index_two]
                     x_btn.onclick = function(orign){
                         keygen = orign.target.id
